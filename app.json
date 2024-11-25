@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "DogVestApp",
+    "slug": "dogvestapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "android": {
+      "permissions": [
+        "BLUETOOTH",
+        "BLUETOOTH_ADMIN",
+        "ACCESS_FINE_LOCATION",
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_ADMIN",
+        "android.permission.BLUETOOTH_CONNECT"
+      ],
+      "package": "com.luethkej.dogvestapp"
+    },
+    "ios": {
+      "infoPlist": {
+        "NSBluetoothPeripheralUsageDescription": "This app uses Bluetooth to connect to the Dog Vest.",
+        "NSLocationWhenInUseUsageDescription": "This app uses location to scan for nearby devices."
+      },
+      "bundleIdentifier": "com.luethkej.dogvestapp"
+    },
+    "plugins": [
+      [
+        "react-native-ble-plx",
+        {}
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "3360ec21-f4e7-4cb0-b66d-50c1dc533f75"
+      }
+    },
+    "newArchEnabled": true
+  }
+}
